@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5eecc;
+    font-family: 'Roboto', sans-serif;
+    line-height: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #ead4be;
+    text-transform: uppercase;
+    align-items: center;
+    width: 1180px;
+}
+
+.navbar .navbar-nav .ul {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 25px;
+    color: #6d512c;
+    justify-content: space-around
+}
+
+.nav-link {
+    display: flex;
+    font-family: "Nanum Myeongjo", serif;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.container .left-side {
+    width: 35%;
+    background: #ead4be;
+}
+
+.container .right-side {
+    width: 65%;
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    background-color: #fdf7ef;
+}
+
+.container .left-side .profile-image {
+    width: 100%;
+}
+
+.container .left-side .profile-image .img {
+    width: 100%;
+    display: flex;
+}
+
+.container .subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    padding: 20px 0;
+    color: #47382d;
+}
+
+.container .left-side .subtitle:last-child {
+    margin-top: 10px;
+}
+
+.container .left-side .name-job {
+    padding: 20px 0;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.container .right-side .name-job .name {
+    font-size: 50px;
+    color: #43362c;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.container .right-side .name-job .job {
+    font-size: 30px;
+    color: #69503e;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+.container .list-name {
+    width: 280px;
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-name-date {
+    text-align: justify;
+}
+
+.container .left-side .line-subtitle{
+    padding: 20px 0;
+    border-bottom: 2px solid #9f6327;
+}
+
+.container .left-side .profile.img {
+    padding: 10px 15px;
+}
+
+.container  .left-side .contact .info:last-child {
+    width: 260px;
+    text-align: justify;
+}
+
+.progress{
+    position: relative;
+    width: 100;
+    height: 10px;
+    border-radius: 6px;
+    margin: 5px 0;
+    background-color: white;
+}
+
+.progress::before {
+    content: '';
+    position: absolute;
+    width: var(--wth);
+    height: 100%;
+    background: #553311;
+}
+
+.container .name-cources {
+    text-align: justify;
+    font-size: 15px;
+    color: #52422f; opacity: 80%;}
+
+.container .right-side .name-job {
+    padding: 20px 0;
+    border-bottom: 2px solid #9f6327;
+}
+
+.containter .right-side .name-job {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start;
+    color: #26252d;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.container .right-side .line-subtitle{
+    padding: 20px 0;
+    border-bottom: 2px solid #9f6327;
+}
+
+.container .right-side .resume-data {
+    display: flex;
+}
+
+.container .right-side .resume-data .year {
+    padding-right: 20px;
+    width: 115px;
+    position: relative;
+}
+
+.container .right-side .resume-data .content {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+
+.container .ph-2 {
+    color: #b0b0b0;
+}
+
+.container .right-side .resume-data .year:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #83603e;
+    border-radius: 50%;
+}
+
+.container .right-side .resume-data .year:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #9f6327;
+}
+
+.container .right-side .resume-data:last-child .year:after {
+    display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .container .left-side .profile-image {
+        display: block;
+    }
+    .container .right-side .name-job {
+        display: none;
+    }
+    .container .right-side .name{
+        display: none;
+    }
+    .container .right-side .job {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        margin: 15px auto;
+        flex-direction: column;
+    }
+    .container .left-side,
+    .container .right-side {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container .left-side .profile-image {
+        display: block;
+    }
+    .container .right-side .name-job {
+        display: none;
+    }
+    .container .right-side .name{
+        display: none;
+    }
+    .container .right-side .job {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        margin: 15px auto;
+        flex-direction: column;
+    }
+    .container .left-side,
+    .container .right-side {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .container .right-side {
+        padding: 20px 30px;
+    }
+    .container .left-side {
+        display: none;
+    }
+    .container .left-side .contact .subtitle {
+        display: none;
+        text-align: center;
+    }
+    .container .right-side .name-job {
+        display: none;
+    }
+    .container .right-side .name{
+        display: none;
+    }
+    .container .right-side .job {
+        display: none;
+    }
+}
+
